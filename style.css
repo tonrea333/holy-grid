@@ -1,29 +1,48 @@
 #app {
-  height: 600px;
-  width: 800px;
-  font-size: 3em;
+  
+  display: grid;
+  grid-template-columns: 15% 40% 20%;
+  grid-template-rows: 25% 60% 60% 25%;
+  grid-template-areas: 
+  "re re re"
+  "orang yello blu"
+ 
+  "orang gree blu"
+  
+  "purpl purpl purpl";
+  font-size: 60px;
+  text-align: center;
+  padding: 20px 0;
+
 }
 
 #header {
   background-color: red;
+  grid-area: re;
+
 }
 
 #footer {
   background-color: indigo;
+  grid-area: purpl;
 }
 
 #article-1 {
   background-color: yellow;
+  grid-area: yello;
 }
 
 #article-2 {
   background-color: green;
+  grid-area: gree;
 }
 
 #nav {
   background-color: orange;
+  grid-area: orang;
 }
 
 #ad-area {
   background-color: blue;
+  grid-area: blu;
 }
